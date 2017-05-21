@@ -68,12 +68,11 @@ def handle_error(status_code):
         err_string = 'Twitter streaming: temporary error occured : ' + repr(status_code)
         print(err_string)
         logging.warning(err_string)
-        try:
-            switch_auth()
-            return True
-        except:
-            print("UNSUCCESSFULL ATTEMPT")
-            continue
+
+
+        switch_auth()
+        return True
+
 
     elif status_code in [400, 401, 403, 404, 406, 410, 422, 500, 502, 504]:
 

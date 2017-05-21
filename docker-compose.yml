@@ -1,12 +1,5 @@
 version: '2'
 services:
-  bitcoin:
-    build: .
-    command: python -u bitcoin.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
   ether:
     build: .
     command: python -u ether.py
@@ -31,6 +24,13 @@ services:
   nem:
     build: .
     command: python -u nem.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  bitcoin:
+    build: .
+    command: python -u bitcoin.py
     volumes:
       - .:/code
     links:
