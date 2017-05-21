@@ -1,0 +1,28 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: python -u twit.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+#  api:
+#    build: .
+#    command: python -u api.py
+#    volumes:
+#      - .:/code
+#    links:
+#      - mongo
+#    ports:
+#      - "5000:5000"
+  mongo:
+    image: 'mongo:3.4.1'
+    volumes:
+      - 'mongo:/data/db'
+    ports:
+    - "27017:27017"
+volumes:
+  mongo:
+
+
