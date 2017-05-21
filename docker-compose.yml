@@ -1,8 +1,43 @@
 version: '2'
 services:
-  web:
+  bitcoin:
     build: .
-    command: python -u twit.py
+    command: python -u bitcoin.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  ether:
+    build: .
+    command: python -u ether.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  litecoin:
+    build: .
+    command: python -u litecoin.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  ripple:
+    build: .
+    command: python -u ripple.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  nem:
+    build: .
+    command: python -u nem.py
+    volumes:
+      - .:/code
+    links:
+      - mongo
+  dash:
+    build: .
+    command: python -u dash.py
     volumes:
       - .:/code
     links:
@@ -22,6 +57,8 @@ services:
       - 'mongo:/data/db'
     ports:
     - "27017:27017"
+    logging:
+      driver: none
 volumes:
   mongo:
 
