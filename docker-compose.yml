@@ -1,43 +1,8 @@
 version: '2'
 services:
-  ether:
+  twit:
     build: .
-    command: python -u ether.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
-  litecoin:
-    build: .
-    command: python -u litecoin.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
-  ripple:
-    build: .
-    command: python -u ripple.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
-  nem:
-    build: .
-    command: python -u nem.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
-  bitcoin:
-    build: .
-    command: python -u bitcoin.py
-    volumes:
-      - .:/code
-    links:
-      - mongo
-  dash:
-    build: .
-    command: python -u dash.py
+    command: python -u twit.py
     volumes:
       - .:/code
     links:
