@@ -97,3 +97,51 @@ INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1):
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Instantiated all auth_pairs in Auth instances
+WARNING:root:There is no key available that is not being used or rate limited, proceeding to wait for one.
+INFO:root:Instantiated all auth_pairs in Auth instances
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:bitcoin: Connected to the streaming API.
+INFO:root:ether: Connected to the streaming API.
+INFO:root:Authentication set has been rate limited at 1495599515.53
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Authentication set has been rate limited at 1495599515.56
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:litecoin: Connected to the streaming API.
+INFO:root:ripple: Connected to the streaming API.
+INFO:root:Instantiated all auth_pairs in Auth instances
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+WARNING:root:The streaming process for tracker siacoin has exited with exception: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f84dafe6610>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+WARNING:root:The streaming process for tracker monero has exited with exception: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f84dafe6550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+WARNING:root:The streaming process for tracker litecoin has exited with exception: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f84dafe6510>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+WARNING:root:The streaming process for tracker stratis has exited with exception: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f84dafe6650>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+INFO:root:dogecoin: Connected to the streaming API.
+INFO:root:lumens: Connected to the streaming API.
+INFO:root:Authentication set has been rate limited at 1495602238.68
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Authentication set has been rate limited at 1495602238.71
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Authentication set has been rate limited at 1495602238.77
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Authentication set has been rate limited at 1495602238.79
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:bitcoin: Connected to the streaming API.
+INFO:root:ripple: Connected to the streaming API.
+INFO:root:Authentication set has been rate limited at 1495602239.99
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:Authentication set has been rate limited at 1495602240.04
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com
+INFO:root:bytecoin: Connected to the streaming API.
+INFO:root:ether: Connected to the streaming API.
