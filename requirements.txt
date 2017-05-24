@@ -1,4 +1,4 @@
 pymongo
 tweepy
-pymongo
 flask
+bs4

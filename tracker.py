@@ -7,6 +7,10 @@ import itertools
 import multiprocessing
 import logging
 from operator import attrgetter
+from bs4 import BeautifulSoup as Soup
+import smtplib
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
 
 #======================================================================================================================>
 #
@@ -458,6 +462,52 @@ class StoreCollection(object):
         if self.store_instance.db_mock != True and self.store_instance.db_running == True:
             cursor =  self.db_collection.find({})
             return cursor
+
+
+class Email(object):
+
+    fromaddr = "YOUR ADDRESS"
+    password = "YOUR PASSWORD"
+    smtp_address = "smtp.gmail.com"
+    smtp_port = 587
+    toaddr = "ADDRESS YOU WANT TO SEND TO"
+    msg = MIMEMultipart('alternative')
+    msg.preamble = """Your mail reader does not support the report format."""
+
+    html = """
+    <html>
+      <head></head>
+      <body>
+        <p>Hi!<br>
+           How are you?<br>
+           Here is the <a href="http://www.python.org">link</a> you wanted.
+        </p>
+      </body>
+    </html>
+    """
+
+    def __init__(self):
+        self.subject = "SUBJECT OF THE MAIL"
+        self.text = ""
+
+
+    def send(self):
+        self.msg['From'] = self.fromaddr
+        self.msg['To'] = self.toaddr
+        self.msg['Subject'] = self.subject
+
+
+        html = MIMEText(self.html, 'html')
+        self.msg.attach(html)
+
+        server = smtplib.SMTP(self.smtp_address, self.smtp_port)
+
+
+    def format_email(self):
+        print()
+
+
+
 
 
 
